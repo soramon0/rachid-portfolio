@@ -27,10 +27,43 @@
     @apply border-border;
   }
   body {
-    @apply font-body bg-background text-foreground;
+    @apply bg-background font-body text-foreground;
   }
 
   svg {
     @apply text-svg;
   }
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* size 0.625rem 10px */
+.scrollbar::-webkit-scrollbar {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+
+/* Track */
+.scrollbar::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+/* Handle */
+.scrollbar::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border);
 }

@@ -23,6 +23,9 @@ const config = {
         display: ['var(--font-display)', ...fontFamily.sans],
         body: ['var(--font-body)', ...fontFamily.sans],
       },
+      screens: {
+        '3xl': '1920px',
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
