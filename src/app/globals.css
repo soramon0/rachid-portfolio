@@ -13,6 +13,7 @@
     --secondary: 245, 42%, 25%;
     --secondary-foreground: 0, 0%, 100%;
 
+    --svg: 0, 0%, 99%;
     --border: 0, 0%, 100%;
     --input: 38, 93%, 59%;
     --ring: 245, 42%, 25%;
@@ -27,5 +28,9 @@
   }
   body {
     @apply font-body bg-background text-foreground;
+  }
+
+  svg {
+    @apply text-svg;
   }
 }
